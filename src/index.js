@@ -6,12 +6,11 @@ const cors = require("cors");
 const departmentRoute = require("./Routes/department.routes");
 const connectToDatabase = require("./Utils/utils");
 const app = express();
-
 connectToDatabase();
 
 app.use(
   cors({
-    origin: "*",
+    origin: environment === "dev" ? "*" : "https://dev-exam.onrender.com",
   })
 );
 
