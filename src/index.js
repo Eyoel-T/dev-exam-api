@@ -1,4 +1,3 @@
-//for env file
 require("dotenv").config();
 global.environment = process.env.NODE_ENV;
 const express = require("express");
