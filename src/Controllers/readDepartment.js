@@ -46,6 +46,7 @@ exports.getDepartmentList = async (req, res) => {
     departments.forEach(({ departmentName }) => {
       departmentsNameList.push({ value: departmentName });
     });
+
     res.status(200).json({
       success: true,
       message: "This are the lists found on the db",

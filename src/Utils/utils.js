@@ -3,7 +3,7 @@ const connectToDatabase = async () => {
   try {
     await mongoose.connect(
       environment === "dev"
-        ? "mongodb://localhost:27017/examDB"
+        ? "mongodb://localhost/examDb"
         : process.env.MONGO_DB_URL,
       {
         useNewUrlParser: true,

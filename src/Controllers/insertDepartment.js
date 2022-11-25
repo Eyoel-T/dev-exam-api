@@ -41,6 +41,7 @@ exports.insertDepartment = async (req, res) => {
     );
     res.status(201).json("successfully added new todo");
   } catch (error) {
+    console.log(error);
     res.status(500).json("serverError");
   }
 };
