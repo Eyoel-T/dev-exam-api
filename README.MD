@@ -15,4 +15,4 @@ install project dependency
 Runs the app in the development mode.\
 Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
-[Live Demo](https://dev-api-zppp.onrender.com)
+[Live Demo](https://dev-exam-api-production.up.railway.app/)

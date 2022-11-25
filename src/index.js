@@ -7,7 +7,11 @@ const connectToDatabase = require("./Utils/utils");
 const app = express();
 connectToDatabase();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.use(express.json());
 app.use("/api", departmentRoute);
