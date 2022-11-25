@@ -7,11 +7,7 @@ const connectToDatabase = require("./Utils/utils");
 const app = express();
 connectToDatabase();
 
-app.use(
-  cors({
-    origin: environment === "dev" ? "*" : "https://dev-exam.onrender.com",
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 app.use("/api", departmentRoute);
